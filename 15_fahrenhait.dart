@@ -1,14 +1,14 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  stdout.write('Suhu Celcius:');
-  String suhu = stdin.readLineSync()!;
-  // print('Suhu Fahrenheit: $suhu');
+  stdout.write('Masukan suhu celcius:');
+  String suhuCelcius = stdin.readLineSync()!;
+
+  num hasil = cekSuhu(suhuCelcius);
+
+  print('Suhu Fahrenhait: $hasil');
 }
 
-num cekSuhu(String suhuFahrenheit) {
-  var hasil = (9/5 * suhu) + 32;
-  return hasil;
+num cekSuhu(String suhuCelcius) {
+  return (9 / 5 * double.parse(suhuCelcius)) + 32;
 }
-
-print(cekSuhu(suhu));
