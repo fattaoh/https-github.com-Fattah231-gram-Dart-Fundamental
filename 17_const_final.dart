@@ -12,7 +12,7 @@ void main(List<String> args) {
   final firstName = 'kuntu';
   final lastName = 'wibu';
 
-  print('halo namaku $firstName + $lastName');
+  print('halo namaku $firstName $lastName');
 }
 
 num luasLingkaran(num radius) => pi * radius * radius;
