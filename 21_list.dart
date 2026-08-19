@@ -42,8 +42,9 @@ void main(List<String> args) {
   print(fullName);
 
   //nested list(list didalam list) jika tidak pakai ...
-
-  //... menggabungkan atau menghilangkan list
-  var merge = [...lastName, ...fullName];
+  var merge = [lastName, fullName];
   print(merge);
+  //... menggabungkan atau menghilangkan list
+  var merge2 = [...lastName, ...fullName];
+  print(merge2);
 }
